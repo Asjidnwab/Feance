@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        .main {
+            width: 1200px;
+            height: 600px;
+            background-color: yellow;
+            display: flex;
+            /* justify-content: space-between;  */
+            justify-content: space-around;
+            /* justify can help us to move it and many more things to do */
+            /* change dierction of colunms and */
+             /* justify-content: space-evenly; */
+             /* flex-wrap: wrap; */
+             align-items: flex-end;
+             /* align itms for vertical and justify for horizontal changes */
+        }
+        /* margin use isn box side for spcing between box */
+        .box{
+            width: 100px;
+            height: 100px;
+            font-size: 20px;
+            text-align: center;
+        }
+        #bx1{
+             background-color: rgb(18, 133, 228);
+             /* height: 50%; */
+        }
+         #bx2{
+            background-color: rgb(235, 19, 19);
+        }
+         #bx3{
+            background-color: rgb(91, 22, 201);  
+            /* order : 2 for changing order of boxes  */
+            order: 4;
+            /* flex grow is used for filling all space according to width and height */
+    
+        }
+         #bx4{
+            background-color: rgb(230, 16, 158);
+        }
+    </style>
+    <!-- div.main>div*4.box#bx1 -->
+     <div class="main">
+        <div class="box" id="bx1">1</div>
+        <div class="box" id="bx2">2</div>
+        <div class="box" id="bx3">3</div>
+        <div class="box" id="bx4">4</div>
+     </div>
+</body>
+</html>
